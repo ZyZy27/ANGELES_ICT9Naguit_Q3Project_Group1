@@ -2,12 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q3 Project</title>
+<style>
+    body{
+        height: 1000px;
+    }
+    .head{
+        height: 400px;
+        width: 100%;
+        margin-top: 50px ;
+        display: flex;
+        align-items: center;
+    }
+    .navbar{
+        width: 100%;
+        height: 100px;
+        background-color: #1b5f839a;
+        color:  white;
+        position: sticky;
+        top: 30px;
+        margin-top: 40px ;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: space-between;
+        font-family: 'Jost';
+    }
+    .btn-group{
+        background-color: black;
+        position: relative;
+        right: 100px;
+        background-color: #1b5f83 ;
+    }
+    .btn{
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: 'Jost';
+        border-style: hidden;
+    }
+    .btn:hover{
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+        color: #1b5f83 ;
+        background-color: white;
+        font-family: 'Jost';
+        border-style: hidden;
+    }
+</style>
+
 </head>
 <body>
+
+<!-- HEADER -->
+ <div class="head">
+    <img src="header.png" width="100%">
+ </div>
+<!--NAVBAR-->
+<div class="navbar">
+    <p style="font-size: 40px;">LUZONLINK RAIL</p>
+
+    <div class="btn-group">
+        <a href="index.html"><button class="btn">HOME</button></a>
+        <a href="reg.html"><button class="btn">REGISTER</button></a>
+        <a href="farem.html"><button class="btn">FARE MATRIX</button></a>
+    </div>
+
+</div>
     
 </body>
 </html>
-
 
