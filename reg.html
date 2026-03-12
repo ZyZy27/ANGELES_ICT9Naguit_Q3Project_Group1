@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,6 @@
             background-image: radial-gradient(var(--delivery-blue) 0.5px, transparent 0.5px);
             background-size: 30px 30px;
             min-height: 100vh;
-            padding: 40px 20px;
         }
         .hero-section{
             background-image: url("hero.png");
@@ -216,12 +215,7 @@
     </div>
 </div>
 
-    <nav class="nav nav-custom">
-        <a class="nav-link" href="index.html">DASHBOARD</a>
-        <a class="nav-link" href="about.html">RESOURCES</a>
-        <a class="nav-link" href="contact.html">SUPPORT</a>
-    </nav>
-
+<form id="lg" action="booking.html" method="GET" style="margin-top: 40px;">
     <div class="registration-card">
         <div class="form-section">
             <h1>Personnel Registration</h1>
@@ -230,54 +224,54 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label class="form-label" for="reg-fullname">Full Legal Name</label>
-                    <input type="text" id="reg-fullname" placeholder="Enter name" class="form-control">
+                    <input type="text" id="reg-fullname" placeholder="Enter name" class="form-control" required>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label class="form-label" for="reg-email">Corporate Email</label>
-                    <input type="email" id="reg-email" placeholder="email@domain.com" class="form-control">
+                    <input type="email" id="reg-email" placeholder="email@domain.com" class="form-control" required>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label class="form-label" for="reg-phone">Contact Number</label>
-                    <input type="text" id="reg-phone" placeholder="Phone" class="form-control">
+                    <input type="text" id="reg-phone" placeholder="Phone" class="form-control" required>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label class="form-label" for="reg-dob">Date of Birth</label>
-                    <input type="date" id="reg-dob" class="form-control">
+                    <input type="date" id="reg-dob" class="form-control" required>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label" for="reg-address">Residential Address</label>
-                <input type="text" id="reg-address" placeholder="Street, City, Zip" class="form-control">
+                <input type="text" id="reg-address" placeholder="Street, City, Zip" class="form-control" required>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label class="form-label" for="reg-exp">Years in Industry</label>
-                    <input type="number" id="reg-exp" class="form-control" min="1">
+                    <input type="number" id="reg-exp" class="form-control" min="1" required>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label class="form-label" for="reg-user">System Username</label>
-                    <input type="text" id="reg-user" class="form-control">
+                    <input type="text" id="reg-user" class="form-control" required>
                 </div>
             </div>
 
             <div class="mb-4">
                 <label class="form-label" for="reg-pass">Access Password</label>
-                <input type="password" id="reg-pass" class="form-control">
+                <input type="password" id="reg-pass" class="form-control" required>
             </div>
             
             <div class="mb-4 d-flex align-items-center">
-                <input type="checkbox" id="reg-terms" class="me-2"> 
+                <input type="checkbox" id="reg-terms" class="me-2" required> 
                 <label for="reg-terms" style="font-size: 0.8rem; color: #64748b;">Accept Service Level Agreement</label>
             </div>
 
             <div class="d-flex gap-2">
-                <button id="btn-submit" class="btn btn-primary">Verify & Register</button>
-                <button id="btn-cancel" class="btn btn-outline-secondary">Abort</button>
+                <button type="submit" id="btn-submit" class="btn btn-primary">Verify & Register</button>
+                <button type="reset" id="btn-cancel" class="btn btn-outline-secondary">Abort</button>
             </div>
         </div>
 
@@ -291,6 +285,7 @@
             <p class="mt-4 small text-muted" style="line-height: 1.4;">Submit a high-resolution portrait for your digital freight credentials.</p>
         </div>
     </div>
+</form>
 
     <script>
         function initUpload() {
@@ -319,3 +314,6 @@
 
 
 
+
+    
+      
