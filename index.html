@@ -45,17 +45,21 @@
             color:  white;
             position: sticky;
             top: 20px;
-            margin-top: 40px auto;
+            margin: 0;
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-family: 'Jost';
+            padding: 0 40px;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 0;
         }
         .btn-group{
             position: relative;
             display: flex;
             gap: 25px;
-            margin-right: 40px;
         }
         .btn{
             padding: 10px 18px;
@@ -116,6 +120,47 @@
             font-size: 16px;
             display: inline-block;
         }
+        .how-section{
+            background: white;
+            padding: 80px 120px;
+            text-align: center;
+        }
+        .how-section h2{
+            font-size: 48px;
+            font-weight: 200;
+            color: #1b5f83;
+            margin-bottom: 50px;
+        }
+        .steps{
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+        .step{
+            max-width: 260px;
+            background: #f2f2f2;
+            padding: 30px 25px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .step-number{
+            font-size: 40px;
+            font-weight: 500;
+            color: white;
+            background: #1b5f83;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+        }
+        .step p{
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -132,10 +177,11 @@
     </header>
 
     <div class="navbar">
-    <p style="font-size: 26px; font-weight: 300; margin-left: 40px;">LUZONLINK RAIL</p>
+    <p style="font-size: 26px; font-weight: 300;">LUZONLINK RAIL</p>
 
     <div class="btn-group">
         <a href="index.html"><button class="btn">HOME</button></a>
+        <a href="reg.html"><button class="btn">REGISTER</button></a>
         <a href="farem.html"><button class="btn">FARE MATRIX</button></a>
     </div>
 </div>
@@ -148,9 +194,33 @@
     <div class="text-container">
         <h2>Unlock Luzon —<br>One Rail at a Time.</h2>
     
-    <a href="reg.html"><button class="register">REGISTER</button></a>
+        <a href="reg.html">
+            <button class="register">REGISTER</button>
+        </a>
     </div>
+    </section>
+
+    <section class="how-section">
+        <h2>How to Book a Ride</h2>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <p>Register for a LuzonLink Rail account to access our booking services.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Select your departure and destination stations using our Fare Matrix.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>Confirm your ride and get ready to experience fast and convenient rail travel.</p>
+            </div>
+        </div>
     </section>
     
 </body>
 </html>
+
